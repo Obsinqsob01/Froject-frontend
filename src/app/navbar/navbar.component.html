@@ -1,0 +1,35 @@
+
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo">
+  <logo>
+      <a routerLink="/" routerLinkActive="active" class="navbar-brand">Froject</a>
+  </logo>
+  <links class="justify-content-end">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+            <a class="nav-link waves-light" routerLink="/" routerLinkActive="active" mdbRippleRadius>Home <span class="sr-only">(current)</span></a>
+        </li>
+        <div *ngIf="sesion">
+            <li class="nav-item">
+                <a class="nav-link waves-light" routerLink="/proyecto/nuevo" routerLinkActive="active" mdbRippleRadius>Nuevo proyectos</a>
+            </li>
+            <li class="nav-item dropdown" dropdown>
+                <a dropdownToggle mdbRippleRadius type="button" class="nav-link dropdown-toggle waves-light" mdbRippleRadius>
+                Mi cuenta<span class="caret"></span></a>
+                <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+                    <a class="dropdown-item waves-light" routerLink="/perfil/luis" routerLinkActive="active" mdbRippleRadius href="#">Mi perfil</a>
+                    <a class="dropdown-item waves-light" routerLinkActive="active" mdbRippleRadius href="#">Cerrar Sesión</a>
+                </div>
+            </li>
+        </div>
+        <div *ngIf="!sesion">
+            <li class="nav-item">
+                <a class="nav-link waves-light" routerLink="/usuario/login" routerLinkActive="active" mdbRippleRadius>Iniciar Sesión</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link waves-light" routerLink="/usuario/registro" routerLinkActive="active" mdbRippleRadius>Registrarse</a>
+            </li>
+        </div>
+      </ul>
+  </links>
+</mdb-navbar>
+          

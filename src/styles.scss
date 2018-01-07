@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background-image: url("http://lorempixel.com/500/500");
+    background: linear-gradient(#5EB7EE, whitesmoke);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: normal;
+
+    color: #212529;
+}

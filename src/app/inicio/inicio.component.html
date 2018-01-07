@@ -1,0 +1,79 @@
+<div class="card" id="contenedor">
+  <div class="container">
+    <h1>Bienvenido Luis</h1>
+    <div>
+      <h2 class="text-dark">Lista de proyectos</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <a routerLink="/proyecto/slug" routerLinkActive="active" title="Titulo del proyecto">
+          <div class="card bg-primary">
+            <div class="card-header">
+                <h3>Proyecto 1</h3>
+            </div>
+            <div class="card-body">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicin</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a routerLink="/proyecto/slug" routerLinkActive="active" title="Titulo del proyecto">
+          <div class="card bg-primary">
+            <div class="card-header">
+                <h3>Proyecto 2</h3>
+            </div>
+            <div class="card-body">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicin</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a routerLink="/proyecto/nuevo" routerLinkActive="active" title="Crear un nuevo proyecto">
+          <div class="card bg-danger">
+            <div class="card-header">
+                <h3>Nuevo proyecto</h3>
+            </div>
+            <div class="card-body">
+              <p>Crear un nuevo proyecto</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card bg-info">
+        <a routerLink="/mis-notas" routerLinkActive="active">
+          <div class="card-header">
+            <h3>Notas</h3>
+            <p>Mis de notas</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card bg-success">
+          <a routerLink="/notas" routerLinkActive="active">
+            <div class="card-header">
+              <h3>Notas grupales</h3>
+              <p>Configuración de la cuenta</p>
+            </div>
+          </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <a routerLink="/perfil/configuracion" routerLinkActive="active">
+        <div class="card bg-dark">
+            <div class="card-header">
+              <h3>Mi configuración</h3>
+              <p>Configuración de la cuenta</p>
+            </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
