@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+<<<<<<< HEAD
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 
 import { FormsModule } from '@angular/forms';
@@ -78,5 +79,22 @@ import { EquipoComponent } from './equipo/equipo.component';
   providers: [],
   bootstrap: [AppComponent],
   schemas: [NO_ERRORS_SCHEMA]
+=======
+import { NgModule } from '@angular/core';
+
+
+import { AppComponent } from './app.component';
+
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+>>>>>>> d44141faa9233633ac9a85d514bcb9ea6e393290
 })
 export class AppModule { }
